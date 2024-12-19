@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    color: white;
+}
+body {
+    background: #0A0519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header h1 {
+    margin-bottom: 10px;
+}
+#status {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+.cell {
+    width: 80px;
+    height: 80px;
+    background: #17122A;
+    border-radius: 8px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cell:hover {
+    background: #2A2343;
+}
+#modeDisplay {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#modeToggleBtn, #restartBtn {
+    margin-top: 10px;
+    background: #17122A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#modeToggleBtn:hover, #restartBtn:hover {
+    background: #2A2343;
+}
